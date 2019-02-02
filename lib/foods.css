@@ -1,0 +1,18 @@
+.manage-foods {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+}
+
+.btn {
+  background-color: #BAA7B0;
+  color: #C7EBF0;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 5px;
+}
