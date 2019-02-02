@@ -1,4 +1,4 @@
-.manage-foods, .get-all-foods, .update-foods {
+.manage-foods, .get-all-foods, .update-foods, .delete-foods {
   display: flex;
   flex-direction: column;
 }
