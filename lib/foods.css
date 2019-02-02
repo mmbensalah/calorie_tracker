@@ -1,4 +1,4 @@
-.manage-foods, .get-all-foods {
+.manage-foods, .get-all-foods, .update-foods {
   display: flex;
   flex-direction: column;
 }
@@ -15,4 +15,8 @@
   border-radius: 10px;
   padding: 10px 30px;
   margin: 5px;
+}
+
+.hidden {
+  display: none;
 }
