@@ -1,4 +1,4 @@
-.manage-foods {
+.manage-foods, .get-all-foods {
   display: flex;
   flex-direction: column;
 }
