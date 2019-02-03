@@ -8,26 +8,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class='manage-foods'>
-    <input type="text" class="field" id="field-post-food" placeholder="Food Name">Please enter a food name</input>
-    <input type="text" class="field" id="field-post-calories" placeholder="Calories">Please enter a calorie amount</input>
-    <button class="btn" id="btn-post-submit">Add Food</button>
-  </div>
+  <nav class='nav-bar'>
+    <button class="btn" id="btn-show-foods">Food</button>
+  </nav>
 
-  <div class='get-all-foods'>
-  </div>
-
-  <div class='update-foods'>
-    <button class="btn" id="btn-patch">Edit Selected Food</button>
-    <div id='inputs-patch-food' class="hidden">
-      <input type="text" class="field" id="field-patch-food" placeholder="Edit food Name"></input>
-      <input type="text" class="field" id="field-patch-calories" placeholder="Edit Calories"></input>
-      <button class="btn" id="btn-patch-submit">Update</button>
+  <div class="foods">
+    <div class="manage-foods">
+      <input type="text" class="field" id="field-post-food" placeholder="Enter a food"></input>
+      <input type="text" class="field" id="field-post-calories" placeholder="Enter calories"></input>
+      <button class="btn" id="btn-post-submit">Add Food</button>
     </div>
-  </div>
 
-  <div class='delete-foods'>
-    <button class="btn" id="btn-delete">Click here to delete a food</button>
+    <div class='get-all-foods'>
+    </div>
+
+    <div class='update-foods'>
+      <button class="btn" id="btn-patch">Edit Selected Food</button>
+      <div id='inputs-patch-food' class="hidden">
+        <input type="text" class="field" id="field-patch-food" placeholder="Edit food Name"></input>
+        <input type="text" class="field" id="field-patch-calories" placeholder="Edit Calories"></input>
+        <button class="btn" id="btn-patch-submit">Update</button>
+      </div>
+    </div>
+
+    <div class='delete-foods'>
+      <button class="btn" id="btn-delete">Click here to delete a food</button>
+    </div>
   </div>
 
   <script src="main.bundle.js"></script>
