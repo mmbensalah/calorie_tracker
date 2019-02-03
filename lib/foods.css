@@ -1,6 +1,8 @@
-.manage-foods, .get-all-foods, .update-foods, .delete-foods {
+.foods {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 150px 0px 0px 0px;
 }
 
 .field {
