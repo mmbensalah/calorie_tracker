@@ -6,15 +6,19 @@ nav, .foods, .diary {
 }
 
 .field {
-  height: 30px;
+  height: 43px;
   text-align: center;
   margin: 5px;
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
 }
 
 .btn {
-  background-color: #BAA7B0;
-  color: #C7EBF0;
+  background-color: #D0FFB7;
+  color: #539987;
+  font-size: 20px;
   border-radius: 10px;
+  border: 2px solid #4CAF50;
   padding: 10px 30px;
   margin: 5px;
 }
