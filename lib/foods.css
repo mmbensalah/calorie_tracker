@@ -1,8 +1,24 @@
-nav, .foods, .diary {
+* {
+  font-family: "Open Sans";
+}
+
+p, h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+nav, .foods, .diary-all, .diary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px 0px 0px 0px;
+  margin: 75px 0px 0px 0px;
+}
+
+.all-meals {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 0px 100px 0px;
 }
 
 .field {
@@ -25,4 +41,19 @@ nav, .foods, .diary {
 
 .hidden {
   display: none;
+}
+
+.diary-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 2px solid #4CAF50;
+  margin: 0px 20px 0px 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.diary-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
