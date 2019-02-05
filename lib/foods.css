@@ -14,7 +14,7 @@ nav, .foods, .diary-all, .diary {
   margin: 75px 0px 0px 0px;
 }
 
-.all-meals {
+.all-meals, .all-dates-meals {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,7 +43,7 @@ nav, .foods, .diary-all, .diary {
   display: none;
 }
 
-.diary-card {
+.diary-card, .calendar-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 250px;
   height: 250px;
@@ -54,6 +54,6 @@ nav, .foods, .diary-all, .diary {
   text-align: center;
 }
 
-.diary-card:hover {
+.diary-card:hover, .calendar-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
