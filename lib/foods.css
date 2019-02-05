@@ -15,7 +15,7 @@ nav, .foods, .diary-all {
   margin: 50px 0px 0px 0px;
 }
 
-.diary {
+.diary, .calendar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ select {
   margin: 50px 0px 0px 0px;
 }
 
-.meal-cards, .all-dates-meals {
+.meal-cards, .date-cards {
   display: flex;
   flex-direction: row;
   align-items: center;
