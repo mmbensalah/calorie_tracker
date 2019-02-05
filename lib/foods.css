@@ -1,5 +1,6 @@
 * {
   font-family: "Open Sans";
+  font-size: 20px;
 }
 
 p, h1 {
@@ -7,14 +8,31 @@ p, h1 {
   color: #4CAF50;
 }
 
-nav, .foods, .diary-all, .diary {
+nav, .foods, .diary-all {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 75px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
 
-.all-meals {
+.diary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  font-size: 20px;
+}
+
+.drop-downs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.meal-cards {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,6 +42,7 @@ nav, .foods, .diary-all, .diary {
 .field {
   height: 43px;
   text-align: center;
+  font-family: "Open Sans";
   margin: 5px;
   border-radius: 10px;
   border: 2px solid #4CAF50;
@@ -32,7 +51,6 @@ nav, .foods, .diary-all, .diary {
 .btn {
   background-color: #D0FFB7;
   color: #539987;
-  font-size: 20px;
   border-radius: 10px;
   border: 2px solid #4CAF50;
   padding: 10px 30px;
