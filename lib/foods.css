@@ -5,10 +5,29 @@
 
 p, h1 {
   text-align: center;
-  color: #4CAF50;
+  color: #286e38;
 }
 
-nav, .foods, .diary-all {
+h2 {
+  text-align: left;
+  color: #286e38;
+  font-size: 48px;
+  margin: 0px;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+
+nav {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+.foods, .diary-all {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +38,13 @@ nav, .foods, .diary-all {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 40px 0px 0px;
 }
 
 select {
@@ -39,6 +65,21 @@ select {
   margin: 50px 0px 100px 0px;
 }
 
+.date-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D0FFB7;
+  color: #286e38;
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
+  padding: 10px 10px;
+  margin: 5px;
+  opacity: .8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
 .field {
   height: 43px;
   text-align: center;
@@ -46,6 +87,17 @@ select {
   margin: 5px;
   border-radius: 10px;
   border: 2px solid #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#container-date {
+  margin: 5px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #539987;
 }
 
 .btn {
@@ -55,13 +107,15 @@ select {
   border: 2px solid #4CAF50;
   padding: 10px 30px;
   margin: 5px;
+  opacity: .8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .hidden {
   display: none;
 }
 
-.diary-card {
+.diary-card, .calendar-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 250px;
   height: 250px;
@@ -70,8 +124,17 @@ select {
   margin: 0px 20px 0px 20px;
   padding: 5px;
   text-align: center;
+  background-color: #D0FFB7;
+  opacity: .8;
 }
 
-.diary-card:hover {
+.diary-card:hover, .calendar-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Background styles */
+body {
+  background: radial-gradient(circle closest-side at 50px 50px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 40px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 60px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 50px 70px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 165px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 140px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 160px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 185px, #FB8B24 3px, transparent 0), radial-gradient(ellipse closest-side at 50px 60px, #F9A734 18px, transparent 0), radial-gradient(ellipse closest-side at 150px 175px, #F9A734 18px, transparent 0), radial-gradient(circle closest-side at 30px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 40px 35px, #36964C 15px, transparent 0), radial-gradient(circle closest-side at 70px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 60px 35px, #286E38 15px, transparent 0), radial-gradient(circle closest-side at 130px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 140px 150px, #36964C 15px, transparent 0), radial-gradient(circle at 170px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle at 160px 150px, #286E38 15px, transparent 0);
+  background-color: #F9D8D4;
+  background-size: 180px 210px;
 }
