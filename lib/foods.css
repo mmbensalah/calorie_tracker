@@ -28,7 +28,6 @@ nav {
 }
 
 
-
 .foods, .diary-all {
   display: flex;
   flex-direction: column;
