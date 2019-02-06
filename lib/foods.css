@@ -8,17 +8,37 @@ p, h1 {
   color: #4CAF50;
 }
 
-nav, .foods, .diary-all {
+h2 {
+  text-align: left;
+  color: #286e38;;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.foods, .diary-all {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px 0px 0px 0px;
 }
 
-.diary, .calendar {
+nav.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.diary {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 40px 0px 0px;
 }
 
 select {
@@ -43,8 +63,14 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px 5px 5px 5px;
+  background-color: #D0FFB7;
+  color: #539987;
   border-radius: 10px;
+  border: 2px solid #4CAF50;
+  padding: 10px 10px;
+  margin: 5px;
+  opacity: .8;
+
 }
 
 .field {
@@ -61,6 +87,9 @@ select {
   border: 2px solid #4CAF50;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #539987;
 }
 
 .btn {
@@ -70,6 +99,7 @@ select {
   border: 2px solid #4CAF50;
   padding: 10px 30px;
   margin: 5px;
+  opacity: .8;
 }
 
 .hidden {
@@ -89,4 +119,11 @@ select {
 
 .diary-card:hover, .calendar-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Background styles */
+body {
+  background: radial-gradient(circle closest-side at 50px 50px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 40px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 60px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 50px 70px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 165px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 140px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 160px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 185px, #FB8B24 3px, transparent 0), radial-gradient(ellipse closest-side at 50px 60px, #F9A734 18px, transparent 0), radial-gradient(ellipse closest-side at 150px 175px, #F9A734 18px, transparent 0), radial-gradient(circle closest-side at 30px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 40px 35px, #36964C 15px, transparent 0), radial-gradient(circle closest-side at 70px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 60px 35px, #286E38 15px, transparent 0), radial-gradient(circle closest-side at 130px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 140px 150px, #36964C 15px, transparent 0), radial-gradient(circle at 170px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle at 160px 150px, #286E38 15px, transparent 0);
+  background-color: #F9D8D4;
+  background-size: 180px 210px;
 }
