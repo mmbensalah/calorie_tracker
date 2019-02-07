@@ -1,43 +1,28 @@
-# Quantified Self Front-end
+# Calorie Tracker
 
-## Initial Setup
+##Basic Overview
 
-1. Clone this starter kit repository and rename the repository to `quantified-self-fe` in one command
+Calorie Tracker allows a user to quickly and easily track their caloric intake each day and track their progress over time.  The app is broken up into three sections:  Foods, Diary, and Calendar. (see images below).  Within the Foods section, a user can view all available foods in the system and update/delete a specific food.  Once the user has access to all of the foods they have eaten that day, they can hop over to the Diary section.  Within the Diary section, the user can add or select a Date they would like to track (the app does allow for back-dating).  Once the Date is selected, the user can select different foods and apply them to different meals throughout that specified Date.  As the user adds foods to a specific Meal, they can see the remaining calories left for that meal.  The user can also delete a food from a meal.  In the Calendar section, the user can view a historical record of their foods consumed based on meal and date.  
 
-  ```shell
-  git clone git@github.com:turingschool-examples/qs-fe-starter-kit.git quantified-self-fe
-  ```
-2. Change into the `quantified-self-fe` directory
+Calorie Tracker consumes a backend API created in Express.  
+Github Repo to Backend:  <https://github.com/bdiveley/quantified_self>.
+Backend Deployed Site (sample endpoint):  <https://damp-garden-70659.herokuapp.com/api/v1/foods>.
 
-3. Remove the default remote (origin)
+### Initial Setup
 
-  ```shell
-  git remote rm origin
-  ```
-
-4. Create a new repository on GitHub named `quantified-self-fe`
-
-5. Add your new repository remote - **your remote URL and user name will be different in the command below**
+1. Clone this repository locally
 
   ```shell
-  git remote add origin git@github.com:<YOUR GITHUB NAME>/quantified-self-fe.git
+  git clone git@github.com:mmbensalah/calorie_tracker.git
   ```
 
-6. Install the dependencies of the starter kit
+2. Install the dependencies
 
   ```shell
   npm install
   ```
 
-7. Add, commit, and push up to your repository
-
-  ```shell
-  git add .
-  git commit -m "Initial commit using starter kit"
-  git push origin master
-  ```
-
-## Running the Server Locally
+### Running the Server Locally
 
 To see your code in action locally, you need to fire up a development server. Use the command:
 
@@ -49,27 +34,13 @@ Once the server is running, visit in your browser:
 
 * `http://localhost:8080/` to run your application.
 
-You will need to make sure that your Quantified Self API is also running at `http://localhost:3000`
+### Running the Server in Production
 
-## GitHub Pages Setup
+This site is served from GitHub Pages in production.
 
-This site will be served from GitHub Pages in production.
+ <https://mmbensalah.github.io/calorie_tracker/>.
 
-In order to see your application running on production:
-
-1. From the command line, run `npm run build`.
-
-2. Commit and push your application to GitHub.
-
-3. Visit your repository on Github
-
-4. Go to Settings
-
-5. Under the Github Pages section of Options, select 'master' as your source and click `Save`
-
-Be sure to `npm run build` and commit before each push to master. A few seconds after you push up, you should be able to see your application at <https://your-github-username.github.io/quantified-self-fe>.
-
-## Built With
+### Built With
 
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
@@ -77,3 +48,29 @@ Be sure to `npm run build` and commit before each push to master. A few seconds 
 * [Mocha](https://mochajs.org/)
 * [Chai](https://chaijs.com/)
 
+### Developers
+
+* Miriam Bensalah - <https://github.com/mmbensalah>
+* Bailey Diveley - <https://github.com/bdiveley>
+
+### Project Board
+
+ <https://github.com/bdiveley/quantified_self/projects/1>.
+
+### Images of the application
+
+# Landing Page
+![alt text](/assets/landing_page.png)
+
+# Foods Section (with basic CRUD functionality)
+![alt text](/assets/foods.png)
+![alt text](/assets/foods_index.png)
+
+# Diary Section
+![alt text](/assets/diary.png)
+![alt text](/assets/date_selection.png)
+![alt text](/assets/meals.png)
+![alt text](/assets/add_meal.png)
+
+# Calendar Section
+![alt text](/assets/calendar.png)
